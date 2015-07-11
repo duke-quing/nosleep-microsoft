@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--Regcom 2015 website created by Web Sub-Committee Head Jennifer Lee-->
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <!-- css link -->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/navstyle.css" rel="stylesheet" type="text/css">
+
+        <!--font-->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- favicon link -->
+        <link rel="icon" href="images/favicon.ico">
+
+        <!--js link-->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+
+        <title>Ateneo Registration Committee</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="author" content="Ateneo Registration Committee">
+        <!--description that appears for the website when searched-->
+        <meta name="desription" content="This is the official website of Ateneo Registration Committee (RegCom), a body of selected student volunteers who are tasked by the Registrar’s Office (RO) to enforce and facilitate the registration process.">
+        <!--tell the search engine the contents of your website-->
+        <meta name="keywords" content="Ateneo, Regcom, Ateneo Regcom, Ateneo Registration Comittee, Registration, admu, ateneo de manila university, registrars office, aisis, aisis online">
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $( "#accordion" ).accordion({
+                    active: 1
+                });
+                
+                //setTimeout(toggle_sidebar,0);
+                $('.option').click(function(event){
+                    event.preventDefault();
+                    toggle_sidebar();
+                });
+            });
+            function toggle_sidebar(){
+                $('#accordion').toggle('slide', { direction: 'left' }, 500);
+            }
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        </script>
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+                <a href="index.html"><li><img src="images/logo.png" alt="ateneo regcom" height="50"></li></a>
+                <a onclick="toggle_visibility('menu');"><li class="menu"><strong>Menu</strong></li></a>
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+        <nav>
+            <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="procedure.html"><li class="active">Procedure</li></a>
+                <a href="batch.html"><li>Batch Schedule</li></a>
+                <a href="faq.html"><li>FAQs</li></a>
+                <a href="http://ls.ateneo.edu/class_schedule.php" target="_blank"><li>Offered Classes</li></a>
+                <a href="http://aisis.ateneo.edu" target="_blank"><li>Aisis</li></a>
+            </ul>
+        </nav>
+        <div class="option wrap">< Options</div>
+        <div id="accordion">
+            <h3>Undergraduates</h3>
+            <div>
+                <ul>
+                    <a href="procedure.html"><li>Registration</li></a>
+                    <a href="lateundergrad.html"><li>Late Registration w/ fine</li></a>
+                </ul>
+            </div>
+            <h3>Graduates</h3>
+            <div>
+                <ul>
+                    <a href="oldgrad.html"><li>Old Graduates</li></a>
+                    <a href="newgrad.html"><li class="sideactive">New Graduates</li></a>
+                    <a href="auditcross.html"><li>Auditors and Cross Registrants</li></a>
+                    <a href="lategrad.html"><li>Late Registration</li></a>
+                </ul>
+            </div>
+            <h3>Payment</h3>
+            <div>
+                <ul>
+                    <a href=""><li>1</li></a>
+                    <li><a href="">2</a></li>
+                </ul>
+            </div>
+            <h3>Proxy Guidelines</h3>
+            <div>
+                <ul>
+                    <a href="proxy.html"><li>Guidelines</li></a>
+                    <a href="sampleproxy.html"><li>Sample Authorization Letter</li></a>
+                </ul>
+            </div>
+        </div>
+        <div id="procedure" class="section wrap">
+            <h1>Graduate Student</h1>
+            <div class="step wrap">
+                <h3>Step 1</h3>
+                <div class="stepcontent">
+                    <h2>Admission Slip, ID Number and Regform Distribution</h2>
+                    <img src="images/regform.png">
+                    <ul>
+                        <li>Bring: Valid ID</li>
+                        <li>Venue: OADGP</li>
+                    </ul>
+                </div>
+                <a href="#" onclick="toggle_visibility('one');">read more</a>
+                <div id="one">
+                    <ul>
+                        <li>Internation (Foreign) student regform venue: Registrar's Office</li>
+                        <li>Scholarship Forms venue: OADGP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step wrap">
+                <h3>Step 2</h3>
+                <div class="stepcontent">
+                    <h2>Online Advisement for Subjects</h2>
+                    <img src="images/subject.png">
+                    <ul>
+                        <li>Venue: Home Department</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step wrap">
+                <h3>Step 3</h3>
+                <div class="stepcontent">
+                    <h2>Checkers</h2>
+                    <img src="images/checker.png">
+                    <ul>
+                        <li>Bring: Valid ID, Regform</li>
+                        <li>Check Scholar Documents</li>
+                        <li>Venue: Case Study Room</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step wrap">
+                <h3>Step 4</h3>
+                <div class="stepcontent">
+                    <h2>Assessment</h2>
+                    <img src="images/assess.png">
+                    <ul>
+                        <li>Bring: Valid ID, Regform</li>
+                        <li>Venue: Central Accounting Office</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step wrap">
+                <h3>Step 5</h3>
+                <div class="stepcontent">
+                    <h2>Cashier</h2>
+                    <img src="images/cashier.png">
+                    <ul>
+                        <li>Bring: Assessment form</li>
+                        <li>Venue: Xavier</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step wrap">
+                <h3>Step 6</h3>
+                <div class="stepcontent">
+                    <h2>ID Application</h2>
+                    <img src="images/id.png">
+                    <ul>
+                        <li><strong>No Proxy</strong></li>
+                        <li>Bring: Tuition Receipt</li>
+                        <li>Venue: ADSA Window 3</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="auditcross.html" class="next">Auditors and Cross Registrant ></a>
+            <div style="clear:both;"></div>
+        </div>
+        <footer>
+            <div class="container section">
+                <h1>Contact Us</h1>
+                <div class="contact">
+                    <div>
+                        For any questions and/or concerns, feel free to reach us through the following online channels:
+                        <div class="socialicon">
+                            <a href="https://www.facebook.com/RegComHelpdesk"><i class="fa fa-facebook-square fa-5x"></i></a>
+                            <a href="https://twitter.com/AteneoRegcom"><i class="fa fa-twitter-square fa-5x"></i></a>
+                        </div>
+                        You may also visit the RegCom promo boards along the EDSA Walk.
+                        <br><br>
+                        Room 204 2nd Floor
+                        <br>
+                        Manuel V. Pangilinan Center for Student Leadership,
+                        <br>
+                        Ateneo de Manila University
+                        <br>
+                        Katipunan Avenue,
+                        Loyola Heights, Quezon City 
+                    </div>
+                    <div>
+                        <strong>Office of the Registrar</strong><br>
+                        426-6001 loc. 5130-5136
+                        <br><br>
+                        <strong>Office of the Associate Dean for Graduate Programs</strong><br>
+                        426-6001 loc. 5141-5142
+                        <br><br>
+                        <strong>Associate Dean for Academic Affairs</strong><br>
+                        426-6001 loc. 5011-5012
+                        <br><br>
+                        <strong>Associate Dean for Student Affairs</strong><br>
+                        426-6001 loc. 5020, 5021
+                        <br><br>
+                        <strong>Office of Admission and Aid</strong><br>
+                        426-6001 loc. 5154 – 5155
+                    </div>
+                </div>
+                <a href="suggest.html"><button>Suggestion Box</button></a>
+                <div class="copyright">Ateneo Registration Committee. Copyright 2015 All Rights Reserved.</div>
+            </div>
+        </footer>
+    </body>
+</html>

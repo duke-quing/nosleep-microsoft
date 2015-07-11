@@ -1,0 +1,476 @@
+body{
+	font-family: 'OpenSans', sans-serif;
+	color: #3c3c3c;
+	font-size: 14px;
+	line-height: 1.5;
+}
+h1, h2, h3, h4{
+	font-family: 'OpenSans-Light', sans-serif;
+}
+a{
+	color: #2366c9;
+}
+a:hover{
+	background-color: #2366c9;
+	color: white;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+		 -o-transition: .3s;
+	  	-ms-transition: .3s;
+			transition: .3s;
+}
+.container{
+	max-width: 960px;
+	margin: auto;
+}
+.section{
+	padding: 50px 15px;
+	text-align: center;
+}
+.wrap{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box
+}
+h1{
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	line-height: 1.2;
+}
+.blue{
+	background-color: #2366c9;
+	color: white;
+}
+.blue .section{
+	padding: 75px 50px 100px 50px;
+}
+.sponsor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.sponsor img{
+	width: 200px;
+}
+footer{
+	background-color: #3c3c3c;
+	color: #eaeaea;
+	position: relative;
+	clear: both;
+	border-bottom: 10px solid #2366c9;
+}
+footer .section{
+	padding-bottom: 12px;
+}
+footer div{
+	margin-bottom: 24px;
+}
+footer button{
+	font-family: 'OpenSans-Semibold', sans-serif;
+	border: 3px solid white;
+	padding: 12px;
+	background-color: transparent;
+	color: white;
+	width: 200px;
+	margin-top: -12px;
+}
+footer button:hover{
+	background-color: white;
+	color: #3c3c3c;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+		 -o-transition: .3s;
+	  	-ms-transition: .3s;
+			transition: .3s;
+}
+footer a:hover{
+	background-color: transparent;
+}
+i{
+	margin: 12px;
+}
+.copyright{
+	margin-top: 24px;
+	margin-bottom: 0;
+}
+.socialicon a:hover{
+	background-color: transparent;
+	color: #ffffff !important;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+		 -o-transition: .3s;
+	  	-ms-transition: .3s;
+			transition: .3s;
+}
+.contact{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.contact div{
+	width: 100%;
+}
+#cards{
+	width: 100%;
+	padding-top: 40px;
+	background-color: #eaeaea;
+}
+.card{
+	height: 150px;
+	width: 50%;
+	padding: 25px;
+}
+.card h1{
+	font-size: 48px;
+}
+.card ul{
+	list-style: none;
+}
+.card li{
+	padding-bottom: 12px;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+.grid-sizer { 
+	width: 50%; 
+}
+.back, .front{
+	text-align: center;
+}
+.card{
+	perspective: 1000;
+}
+/* flip the pane when hovered*/
+.card:hover .flipper, .hover .flipper{
+	transform: rotateY(180deg);
+	-webkit-user-transform: rotateY(180deg);
+	-moz-user-transform: rotateY(180deg);
+	-ms-user-transform: rotateY(180deg);
+}
+/*flipback?? WTF DID I JUST DO*/
+.card.wrap.hover:hover .flipper, .hover .flipper{
+	transform: rotateY(0deg);
+	-webkit-user-transform: rotateY(0deg);
+	-moz-user-transform: rotateY(0deg);
+	-ms-user-transform: rotateY(0deg);
+}
+.front, .back {
+	width: 100%;
+	height: 100%
+}
+/* flip speed goes here */
+.flipper {
+	transition: 0.4s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* front pane, placed above back */
+.front {
+	/*z-index: 2;*/
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+.back {
+	position: absolute;
+    top:50%;
+	transform: rotateY(180deg);
+}
+#procedure{
+	width: 100%;
+	margin-top: 100px;
+}
+.step{
+	/*min-height: 600px;*/
+	padding: 12px;
+	width: 100%;
+	/*float: left;*/
+}
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten{
+	display: none;
+}
+.next{
+	float: right;
+	margin-right: 10%;
+}
+.question button,
+.thanks button{
+	border: 3px solid #2366c9;
+	background-color: transparent;
+	color: #2366c9;
+	font-family: 'OpenSans-Semibold', sans-serif;
+	text-align: center;
+	padding: 12px;
+	margin: 24px 0;
+	width: 100%;
+	
+}
+.question button{
+	min-height: 100px;
+}
+.question button:hover,
+.thanks button:hover{
+	background-color: #2366c9;
+	color: #ffffff;
+	cursor: pointer;
+	-webkit-transition: .2s;
+	   -moz-transition: .2s;
+		 -o-transition: .2s;
+	  	-ms-transition: .2s;
+			transition: .2s;
+}
+.question a:hover,
+.thanks a:hover{
+	background-color: transparent;
+}
+.question div a:hover{
+	background-color: #2366c9;
+}
+.question div{
+	text-align: left;
+}
+#eta h3{
+	text-transform: uppercase;
+}
+#eta table{
+	border: 1px solid #eaeaea;
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 24px;
+}
+#eta td{
+	border: 1px solid #eaeaea;
+	width: 50%;
+	padding: 3px;
+}
+#eta thead{
+	font-family: 'OpenSans-Semibold', sans-serif;
+	background-color: #3c3c3c;
+	color: white;
+}
+#eta .title{
+	margin-top: 24px;
+	margin-bottom: 6px;
+}
+.detail{
+	font-size: 12px;
+	text-align: left;
+	color: #505050;
+}
+#app{
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+	text-align: left;
+}
+#app label{
+	color: #3c3c3c;
+	margin-bottom: 12px;
+	margin-right: 12px;
+	color: #3c3c3c;
+}
+#app input{
+	border: 1px solid #eaeaea;
+	padding: 6px;
+	margin-bottom: 12px;
+	width: 100%;
+}
+#app button{
+	/*visibility: hidden;*/
+}
+.id_input{
+	font-family: 'OpenSans-Semibold', sans-serif;
+	color: #2366c9;
+	margin-right: 12px;
+}
+.subtitle{
+	font-family: 'OpenSans-Semibold', sans-serif;
+	color: #2366c9;
+}
+.nonsteps{
+	text-align: left;
+	padding: 0 15px;
+}
+.nonsteps h3{
+	font-size: 24px;
+	color: #2366c9;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+.nonsteps ul{
+	margin-bottom: 24px;
+	list-style: none;
+}
+.nonsteps li{
+	line-height: 2.5;
+}
+.stepcontain{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+}
+.stepcontent{
+	text-align: center;
+}
+.step ul{
+	padding: 0 30px;
+	list-style: none;
+}
+.stepcontent h2{
+	font-size: 16px;
+	margin-top: 12px;
+}
+.stepcontent img{
+	height: 100px;
+	margin: 12px 0;
+}
+.front img{
+	height: 25px;
+}
+#search{
+	visibility: hidden;
+}
+@media screen and (min-width: 350px) {
+	.grid-sizer{
+		width: 33.3333333%;
+	}
+	.card{
+		width: 33.3333333%;
+		height: 200px;
+	}
+	.sponsor img{
+		width: 240px;
+	}
+	.step{
+		/*width: 50%;*/
+		/*min-height: 300px;*/
+	}
+	#procedure{
+		margin-top: 51px;
+	}
+}
+@media screen and (min-width: 450px) {
+	#id_input{
+		width: 273px !important;
+	}
+	#app input, #app label, .id_input{
+		float: left;
+	}
+	#name{
+		width: 350px !important;
+	}
+	#year{
+		width: 50px !important;
+		margin-right: 12px;
+	}
+	#course{
+		width: 230px !important;
+	}
+	.year, .name{
+		width: 38px !important;
+	}
+	.online, .manual{
+		width: 225px !important;
+	}
+	#online, #manual{
+		width: 163px !important;
+	}
+}
+@media screen and (min-width: 550px) {	
+	.grid-sizer{
+		width: 25%;
+	}
+	.card{
+		width: 25%;
+		height: 300px;
+	}
+	.step{
+		width: 50%;
+		/*min-height: 400px;*/
+	}
+	.nonsteps{
+		margin-left: 10%;
+	}
+	.front img{
+		height: 50px;
+	}
+	.thanks button{
+		width: 200px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 768px) {
+	.step{
+		width: 33.3333333%;
+		/*min-height: 400px;*/
+	}
+}
+@media screen and (min-width: 840px) {
+	.step{
+		width: 50%;
+		/*min-height: 400px;*/
+	}
+	.contact div{
+		width: 50%;
+		text-align: left;
+	}
+	.grid-sizer{
+		width: 20%;
+	}
+	.card{
+		width: 20%;	
+	}
+	#procedure{
+		width: calc(100% - 200px);
+		float: right;
+	}
+	.question{
+		width: 50%;
+		float: left;
+		padding: 0 6px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.step{
+		width: 33.333333%;
+		/*min-height: 400px;*/
+	}
+}
+@font-face {
+	font-family: 'Gotham-Bold';
+	src: url('../fonts/Gotham-Bold.woff') format('woff'), 
+       url('../fonts/Gotham-Bold.ttf')  format('truetype'); 
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Regular.woff') format('woff'), 
+       url('../fonts/OpenSans-Regular.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url('../fonts/OpenSans-Light.woff') format('woff'), 
+       url('../fonts/OpenSans-Light.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans-Semibold';
+	src: url('../fonts/OpenSans-Semibold.woff') format('woff'), 
+       url('../fonts/OpenSans-Semibold.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

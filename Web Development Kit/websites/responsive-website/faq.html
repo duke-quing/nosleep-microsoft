@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--Regcom 2015 website created by Web Sub-Committee Head Jennifer Lee-->
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <!-- css link -->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/navstyle.css" rel="stylesheet" type="text/css">
+
+        <!--font-->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- favicon link -->
+        <link rel="icon" href="images/favicon.ico">
+
+        <!--js link-->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+
+        <title>Ateneo Registration Committee</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="author" content="Ateneo Registration Committee">
+        <!--description that appears for the website when searched-->
+        <meta name="desription" content="This is the official website of Ateneo Registration Committee (RegCom), a body of selected student volunteers who are tasked by the Registrar’s Office (RO) to enforce and facilitate the registration process.">
+        <!--tell the search engine the contents of your website-->
+        <meta name="keywords" content="Ateneo, Regcom, Ateneo Regcom, Ateneo Registration Comittee, Registration, admu, ateneo de manila university, registrars office, aisis, aisis online">
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+                <a href="index.html"><li><img src="images/logo.png" alt="ateneo regcom" height="50"></li></a>
+                <a onclick="toggle_visibility('menu');"><li class="menu"><strong>Menu</strong></li></a>
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+        <nav>
+            <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="procedure.html"><li>Procedure</li></a>
+                <a href="batch.html"><li>Batch Schedule</li></a>
+                <a href="faq.html"><li class="active">FAQs</li></a>
+                <a href="http://ls.ateneo.edu/class_schedule.php" target="_blank"><li>Offered Classes</li></a>
+                <a href="http://aisis.ateneo.edu" target="_blank"><li>Aisis</li></a>
+            </ul>
+        </nav>
+        <div class="container section wrap" style="margin-top:51px; min-height:80vh;">
+            <div class="nonsteps">
+                <h3>Proxy Reminders</h3>
+                <ul>
+                    <li>Student's valid ID (with signature and picture)</li>
+                    <li>Proxy's valid ID (with signature and picture)</li>
+                    <li>Type-written or word-processed authorization letter (<a href="sampleproxy.html">Sample Letter</a>)</li>
+                    <li>AISIS username / password of student (undergraduates only)</li>
+                </ul>
+            </div>
+            <h1>Frequently Asked Questions</h1>
+            <div class="question wrap">
+                <a href="#" onclick="toggle_visibility('one');"><button>I enlisted but did not confirm</button></a>
+                <div id="one">
+                    Enlistment cannot be completed without confirmation. If you do not confirm, your slots will not be registered and you will not be officially enrolled in the classes you chose. To avoid losing your slots, and losing the classes you want, click the confirm button after choosing your classes. You may print your assessment form afterwards.
+                </div>
+            </div>
+            <div class="question wrap">
+                <a href="#" onclick="toggle_visibility('two');"><button>I am a non-degree student and I need to get my undergrad forms. I am lost and do not know where to go.</button></a>
+                <div id="two">
+                    Students that require special assistance are to go to the venue for SOSE Enlistment. Non-degree students, as well as those returning from LOA, may go to the SOSE Enlistment venue during manual registration to enlist.
+                </div>
+            </div>
+            <div class="question wrap">
+                <a href="#" onclick="toggle_visibility('three');"><button>I went to print my assessment form in the accounting office.</button></a>
+                <div id="three">
+                    Printing  of  assessment  forms  are  not  done  in  the  Accounting  Office. You should go to the enlistment venues, instead. You may print your assessment form during assigned manual registration in the designated venue assigned to your school. Make sure that you have already completed the enlistment process and only require the printed version of the assessment form. People who only need to print their assessment form do not need to follow the batching schedule. 
+                </div>
+            </div>
+            <div class="question wrap">
+                <a href="#" onclick="toggle_visibility('four');"><button>I am not part of the varsity team of any sports yet I enlisted in a varsity subject.</button></a>
+                <div id="four">
+                    Students  who  are  part  of  the  varsity  of  any  sport  are  entitled  to  a  special  Physical  Education  subject wherein only varsity players can enter and enlist in (PE261, PE262, PE263, and PE264). Only the regular PE subjects are available to those who are not part of any varsity team and they should get that PE. If it turns out that they were not able to enlist in a regular PE and mistakenly enlisted in a varsity class PE, then the problem can be fixed during the start of manual enlistment.
+                </div>
+            </div>
+            <div class="question wrap">
+                <a href="#" onclick="toggle_visibility('five');"><button>I belong to the 1st batch. I went to school for manual registration at 8:00 in the morning but they told me I could not enlist yet.</button></a>
+                <div id="five">
+                    The  batching  system  during  the  manual  registration  period  is  different  from  that  of  the  online  enlistment process. To  avoid  confusion,  please  check  your <a href="batch.html">batch  number  and the  corresponding  batch  schedule  for manual registration</a>.
+                </div>
+            </div>
+            <div class="question wrap">
+                <a href="#" onclick="toggle_visibility('six');"><button>I do not know what paired subjects mean. I enlisted in different sections for EN11 and LIT13</button></a>
+                <div id="six">
+                    Subjects  such  as  English  and  Literature,  and  Science  subjects  with  both  Lecture  and  Laboratory,  are considered  paired  subjects.  Students  are  required  to  be  a  part  of  only  one  section for  paired  subjects  so they must make sure that they do not enlist in different sections. 
+                </div>
+            </div>
+            <div class="question wrap">
+                <a href="#" onclick="toggle_visibility('seven');"><button>I think I might have more units than I need. I will have to enlist manually to take some subjects out.</button></a>
+                <div id="seven">
+                    For  freshmen  and  sophomores,  NSTP,  PE  and  INTAC  are  non-academic  courses  and  as  such,  they  are not included in the academic load. Even if you enlist for these classes, you will not be overloaded and you will be able to complete the enlistment process. On the other hand, juniors, seniors, and superseniors who still have to enlist in NSTP, PE, or INTAC will have these courses added to their academic load. 
+                </div>
+            </div>
+            <div class="question wrap">
+                <a href="#" onclick="toggle_visibility('eight');"><button>I started processing my load revision forms during manual registration to save time.</button></a>
+                <div id="eight">
+                    Load revision forms can be obtained during the manual registration period, upon presentation of the tuition receipt or acknowledgment receipt. However, the processing of these load revision forms can only be done once classes for the semester have begun.<br>
+                    For more details on the process of load revision, please refer to the <a href="loadrev.html">Load Revision Schedule.</a>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <footer>
+            <div class="container section">
+                <h1>Contact Us</h1>
+                <div class="contact">
+                    <div>
+                        For any questions and/or concerns, feel free to reach us through the following online channels:
+                        <div class="socialicon">
+                            <a href="https://www.facebook.com/RegComHelpdesk"><i class="fa fa-facebook-square fa-5x"></i></a>
+                            <a href="https://twitter.com/AteneoRegcom"><i class="fa fa-twitter-square fa-5x"></i></a>
+                        </div>
+                        You may also visit the RegCom promo boards along the EDSA Walk.
+                        <br><br>
+                        Room 204 2nd Floor
+                        <br>
+                        Manuel V. Pangilinan Center for Student Leadership,
+                        <br>
+                        Ateneo de Manila University
+                        <br>
+                        Katipunan Avenue,
+                        Loyola Heights, Quezon City 
+                    </div>
+                    <div>
+                        <strong>Office of the Registrar</strong><br>
+                        426-6001 loc. 5130-5136
+                        <br><br>
+                        <strong>Office of the Associate Dean for Graduate Programs</strong><br>
+                        426-6001 loc. 5141-5142
+                        <br><br>
+                        <strong>Associate Dean for Academic Affairs</strong><br>
+                        426-6001 loc. 5011-5012
+                        <br><br>
+                        <strong>Associate Dean for Student Affairs</strong><br>
+                        426-6001 loc. 5020, 5021
+                        <br><br>
+                        <strong>Office of Admission and Aid</strong><br>
+                        426-6001 loc. 5154 – 5155
+                    </div>
+                </div>
+                <a href="suggest.html"><button>Suggestion Box</button></a>
+                <div class="copyright">Ateneo Registration Committee. Copyright 2015 All Rights Reserved.</div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    </script>
+</html>

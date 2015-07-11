@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="255px" height="383.981px" viewBox="0 0 255 383.981" enable-background="new 0 0 255 383.981" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#2366C9" stroke-width="10" stroke-linejoin="round" stroke-miterlimit="10" d="M235,349.431
+		c0,11.046-8.954,20-20,20H40c-11.046,0-20-8.954-20-20v-258c0-11.046,8.954-20,20-20h175c11.046,0,20,8.954,20,20V349.431z"/>
+</g>
+<rect x="80" y="153.431" fill="none" stroke="#2366C9" stroke-width="10" stroke-linejoin="round" stroke-miterlimit="10" width="96" height="120"/>
+<path fill="none" stroke="#2366C9" stroke-width="10" stroke-linejoin="round" stroke-miterlimit="10" d="M158.912,273.431
+	l-20.035-45.135c9.257-4.13,15.713-13.493,15.713-24.285c0-14.634-11.864-26.538-26.496-26.538
+	c-14.635,0-26.497,11.841-26.497,26.474c0,10.793,6.455,20.229,15.712,24.361l-20.035,45.123H158.912z"/>
+<g>
+	
+		<line fill="none" stroke="#2366C9" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="53.187" y1="19.532" x2="86.005" y2="71.226"/>
+	
+		<line fill="none" stroke="#2366C9" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="86.051" y1="19.532" x2="118.869" y2="71.226"/>
+	
+		<line fill="none" stroke="#2366C9" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="169.844" y1="19.532" x2="138.916" y2="68.249"/>
+	
+		<line fill="none" stroke="#2366C9" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="202.708" y1="19.532" x2="169.89" y2="71.226"/>
+</g>
+<text transform="matrix(1 0 0 1 79 130.9287)" fill="#2366C9" font-family="'OpenSans-Semibold'" font-size="36">Proxy</text>
+<text transform="matrix(1 0 0 1 41.7891 328.417)" fill="#2366C9" font-family="'Bello-Script'" font-size="48">signature</text>
+</svg>
